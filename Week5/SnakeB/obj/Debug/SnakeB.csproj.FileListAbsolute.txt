@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Week5\SnakeB\bin\Debug\SnakeB.exe.config
+C:\Users\user\source\repos\Week5\SnakeB\bin\Debug\SnakeB.exe
+C:\Users\user\source\repos\Week5\SnakeB\bin\Debug\SnakeB.pdb
+C:\Users\user\source\repos\Week5\SnakeB\obj\Debug\SnakeB.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Week5\SnakeB\obj\Debug\SnakeB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Week5\SnakeB\obj\Debug\SnakeB.exe
+C:\Users\user\source\repos\Week5\SnakeB\obj\Debug\SnakeB.pdb

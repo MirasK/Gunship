@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\Lab1\Circle\bin\Debug\Circle.exe.config
+C:\Users\user\source\repos\Lab1\Circle\bin\Debug\Circle.exe
+C:\Users\user\source\repos\Lab1\Circle\bin\Debug\Circle.pdb
+C:\Users\user\source\repos\Lab1\Circle\obj\Debug\Cir.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Lab1\Circle\obj\Debug\Circle.exe
+C:\Users\user\source\repos\Lab1\Circle\obj\Debug\Circle.pdb

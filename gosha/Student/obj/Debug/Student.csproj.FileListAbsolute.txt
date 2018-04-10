@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\gosha\Student\bin\Debug\Student.exe.config
+C:\Users\user\source\repos\gosha\Student\bin\Debug\Student.exe
+C:\Users\user\source\repos\gosha\Student\bin\Debug\Student.pdb
+C:\Users\user\source\repos\gosha\Student\obj\Debug\Student.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\gosha\Student\obj\Debug\Student.exe
+C:\Users\user\source\repos\gosha\Student\obj\Debug\Student.pdb

@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\FAR\FarCopy\bin\Debug\FarCopy.exe.config
+C:\Users\user\source\repos\FAR\FarCopy\bin\Debug\FarCopy.exe
+C:\Users\user\source\repos\FAR\FarCopy\bin\Debug\FarCopy.pdb
+C:\Users\user\source\repos\FAR\FarCopy\obj\Debug\FarCopy.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FAR\FarCopy\obj\Debug\FarCopy.exe
+C:\Users\user\source\repos\FAR\FarCopy\obj\Debug\FarCopy.pdb

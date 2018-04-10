@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Week5\Snake2\obj\Debug\Snake2.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Week5\Snake2\obj\Debug\Snake2.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Week5\Snake2\bin\Debug\Snake2.exe.config
+C:\Users\user\source\repos\Week5\Snake2\bin\Debug\Snake2.exe
+C:\Users\user\source\repos\Week5\Snake2\bin\Debug\Snake2.pdb
+C:\Users\user\source\repos\Week5\Snake2\obj\Debug\Snake2.exe
+C:\Users\user\source\repos\Week5\Snake2\obj\Debug\Snake2.pdb

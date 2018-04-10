@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\FarWeek3\File\bin\Debug\File.exe.config
+C:\Users\user\source\repos\FarWeek3\File\bin\Debug\File.exe
+C:\Users\user\source\repos\FarWeek3\File\bin\Debug\File.pdb
+C:\Users\user\source\repos\FarWeek3\File\obj\Debug\File.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\FarWeek3\File\obj\Debug\File.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FarWeek3\File\obj\Debug\File.exe
+C:\Users\user\source\repos\FarWeek3\File\obj\Debug\File.pdb

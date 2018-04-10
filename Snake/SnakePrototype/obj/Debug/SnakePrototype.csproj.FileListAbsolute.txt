@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Snake\SnakePrototype\bin\Debug\SnakePrototype.exe.config
+C:\Users\user\source\repos\Snake\SnakePrototype\bin\Debug\SnakePrototype.exe
+C:\Users\user\source\repos\Snake\SnakePrototype\bin\Debug\SnakePrototype.pdb
+C:\Users\user\source\repos\Snake\SnakePrototype\obj\Debug\SnakePrototype.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Snake\SnakePrototype\obj\Debug\SnakePrototype.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Snake\SnakePrototype\obj\Debug\SnakePrototype.exe
+C:\Users\user\source\repos\Snake\SnakePrototype\obj\Debug\SnakePrototype.pdb

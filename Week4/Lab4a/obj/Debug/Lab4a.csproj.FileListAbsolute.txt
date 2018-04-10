@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Week4\Lab4a\obj\Debug\Lab4a.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Week4\Lab4a\obj\Debug\Lab4a.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Week4\Lab4a\bin\Debug\Lab4a.exe.config
+C:\Users\user\source\repos\Week4\Lab4a\bin\Debug\Lab4a.exe
+C:\Users\user\source\repos\Week4\Lab4a\bin\Debug\Lab4a.pdb
+C:\Users\user\source\repos\Week4\Lab4a\obj\Debug\Lab4a.exe
+C:\Users\user\source\repos\Week4\Lab4a\obj\Debug\Lab4a.pdb

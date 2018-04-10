@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Lab2\DirFile\bin\Debug\DirFile.exe.config
+C:\Users\user\source\repos\Lab2\DirFile\bin\Debug\DirFile.exe
+C:\Users\user\source\repos\Lab2\DirFile\bin\Debug\DirFile.pdb
+C:\Users\user\source\repos\Lab2\DirFile\obj\Debug\DirFile.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Lab2\DirFile\obj\Debug\DirFile.exe
+C:\Users\user\source\repos\Lab2\DirFile\obj\Debug\DirFile.pdb
+C:\Users\user\source\repos\Lab2\DirFile\obj\Debug\DirFile.csprojResolveAssemblyReference.cache

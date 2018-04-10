@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\gosha\ConsoleApp2\obj\Debug\ConstructorsFuncClassesMethods.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\gosha\ConsoleApp2\obj\Debug\ConstructorsFuncClassesMethods.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\gosha\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\user\source\repos\gosha\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\user\source\repos\gosha\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\user\source\repos\gosha\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\user\source\repos\gosha\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
