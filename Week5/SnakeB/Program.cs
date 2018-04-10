@@ -35,7 +35,7 @@ namespace SnakeB
             string buttonpressed = "no";
             while (true)
             {
-                //Console.Clear();
+                Console.Clear();
                 if (body.xpos == screenw - 1 || body.xpos == 0 || body.ypos == screenh - 1 || body.ypos == 0)
                 {
                     gameover = 1;
@@ -146,6 +146,7 @@ namespace SnakeB
                     yposlijf.RemoveAt(0);
                 }
             }
+            Console.Clear();
             Console.SetCursorPosition(screenw / 5, screenh / 2);
             Console.WriteLine("Game over, Score: " + score);
             Console.SetCursorPosition(screenw / 5, screenh / 2 + 1);
