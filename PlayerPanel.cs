@@ -206,8 +206,8 @@ namespace BattleShip
         {
             Color color;
 
-            if (isGood) color = Color.Green;
-            else color = Color.White;
+            //if (isGood) color = Color.Green;
+            //else color = Color.White;
 
             for (int i = 0; i < P.Count; ++i)
             {
@@ -224,7 +224,7 @@ namespace BattleShip
                             break;
                     }
                 }
-                Controls[P[i].X * 10 + P[i].Y].BackColor = color;
+                //Controls[P[i].X * 10 + P[i].Y].BackColor = color;
             }
         }
 
