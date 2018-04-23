@@ -1,0 +1,11 @@
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\bin\Debug\TelephoneBook.exe.config
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\bin\Debug\TelephoneBook.exe
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\bin\Debug\TelephoneBook.pdb
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.Form1.resources
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.Properties.Resources.resources
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.csproj.GenerateResource.Cache
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.exe
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.pdb
+c:\users\user\source\repos\TelephoneBook\TelephoneBook\obj\Debug\TelephoneBook.Form2.resources

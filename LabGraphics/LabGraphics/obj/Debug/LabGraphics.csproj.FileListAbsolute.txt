@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\Picture.Form1.resources
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\LabGraphics.Properties.Resources.resources
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\LabGraphics.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\LabGraphics.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\LabGraphics\LabGraphics\bin\Debug\LabGraphics.exe.config
+C:\Users\user\source\repos\LabGraphics\LabGraphics\bin\Debug\LabGraphics.exe
+C:\Users\user\source\repos\LabGraphics\LabGraphics\bin\Debug\LabGraphics.pdb
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\LabGraphics.exe
+C:\Users\user\source\repos\LabGraphics\LabGraphics\obj\Debug\LabGraphics.pdb

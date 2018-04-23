@@ -3,148 +3,241 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Battleship
+namespace BattleShip
 {
-    enum PanelPosition
+    enum PanelPos
     {
-        Left,
-        Right
+        left,
+        right
     }
 
-    enum PlayerType
-    {
-        Human,
-        Bot
-    }
+    delegate void GameDelegate();
 
     class PlayerPanel : Panel
     {
+        int cellSize;
+
         public Brain brain;
-        int cellW = 20;
-        PanelPosition panelPosition;
-        PlayerType playerType;
-        TurnDelegate tDelegate;
+        GameDelegate turn;
 
-        public PlayerPanel(PanelPosition panelPosition, PlayerType playerType, TurnDelegate tDelegate)
+        public PlayerType playerType;
+        PanelPos panelPos;
+
+        public PlayerPanel(PlayerType playerType, PanelPos panelPos, GameDelegate turn, GameDelegate over, GameDelegate check)
         {
-            this.panelPosition = panelPosition;
             this.playerType = playerType;
-            this.tDelegate = tDelegate;
+            this.panelPos = panelPos;
+            this.turn = turn;
 
-            Initialize();
-            Random rnd1 = new Random(Guid.NewGuid().GetHashCode());
-            Random rnd2 = new Random(Guid.NewGuid().GetHashCode());
+            cellSize = 25;
 
-            if (playerType == PlayerType.Human)
+            switch (panelPos)
             {
-                while (brain.stIndex < brain.st.Length - 1)
-                {
-                    int row = rnd1.Next(0, 10);
-                    int column = rnd1.Next(0, 10);
-                    string msg = string.Format("{0}_{1}", row, column);
-                    brain.Process(msg);
-                }
+                case PanelPos.left:
+                    Name = "player1";
+                    break;
+                case PanelPos.right:
+                    Name = "player2";
+                    break;
             }
 
-            if (playerType == PlayerType.Bot)
+            CreateBtns();
+
+            brain = new Brain(DrawBtns, over, check, RedrawBtns, playerType);
+
+            if (playerType == PlayerType.human)
+                CreateSwitchBtn();
+
+            if (playerType == PlayerType.bot)
+                BotPlacement();
+        }
+
+        private void CreateSwitchBtn()
+        {
+            Button btn = new Button();
+
+            btn.Name = "switcher";
+            btn.Click += Btn_Click;
+            btn.Size = new Size(3 * cellSize, cellSize);
+            //btn.Location = new Point(0, 10 * cellSize + cellSize);
+            //btn.BackColor = Color.DeepSkyBlue;
+            btn.TextImageRelation = TextImageRelation.ImageBeforeText;
+            //btn.Text = "LeftToRight";
+
+            Controls.Add(btn);
+        }
+
+        private void BotPlacement()
+        {
+            string switcher = "switcher";
+
+            while (brain.index < brain.st.Length - 1)
             {
-                while (brain.stIndex < brain.st.Length - 1)
-                {
-                    int row = rnd2.Next(0, 10);
-                    int column = rnd2.Next(0, 10);
-                    string msg = string.Format("{0}_{1}", row, column);
-                    brain.Process(msg);
-                }
+                int row = new Random().Next(0, 10);
+                int column = new Random().Next(0, 10);
+                string msg = string.Format("{0}_{1}", row, column);
+
+                int random = new Random().Next(0, 2);
+
+                if (random == 0)
+                    brain.Switch(switcher);
+
+                brain.Process(msg);
             }
         }
 
-        private void Initialize()
+        private void CreateBtns()
         {
-            this.Location = new System.Drawing.Point(cellW + 10, cellW + 10);
+            Location = new Point(cellSize, 2 * cellSize);
+            Size = new Size(10 * cellSize, 12 * cellSize);
 
-            if (panelPosition == PanelPosition.Right)
-            {
-                this.Location = new System.Drawing.Point(cellW * 10 + cellW + 20, cellW + 10);
-            }
-
-            this.BackColor = SystemColors.ActiveCaption;
-            this.Size = new System.Drawing.Size(cellW * 10, cellW * 10);
+            if (panelPos == PanelPos.right)
+                Location = new Point(10 * cellSize + 2 * cellSize, 2 * cellSize);
 
             for (int i = 0; i < 10; ++i)
             {
                 for (int j = 0; j < 10; ++j)
                 {
                     Button btn = new Button();
+
                     btn.Name = i + "_" + j;
+                    btn.Size = new Size(cellSize, cellSize);
+                    btn.Location = new Point(i * cellSize, j * cellSize);
+
                     btn.Click += Btn_Click;
-                    btn.Size = new Size(cellW, cellW);
-                    btn.Location = new Point(i * cellW, j * cellW);
-                    this.Controls.Add(btn);
+                    btn.MouseEnter += Btn_Enter;
+                    btn.MouseLeave += Btn_Leave;
+
+                    Controls.Add(btn);
                 }
             }
-
-            brain = new Brain(ChangeButton);
         }
 
-        private void Btn_Click(object sender, EventArgs e)
+        private void Btn_Enter(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if (brain.stIndex < brain.st.Length - 1)
-            {
-                brain.Process(btn.Name);
-            }
-            else
-            {
-                if (!brain.Process2(btn.Name))
-                {
-                    tDelegate.Invoke();
-                }
-            }
+
+            brain.Enter(btn.Name);
         }
 
-        private void ChangeButton(CellState[,] map)
+        private void Btn_Leave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            brain.Leave(btn.Name);
+        }
+
+        private void DrawBtns(CellState[,] map)
         {
             for (int i = 0; i < 10; ++i)
             {
                 for (int j = 0; j < 10; ++j)
                 {
-                    Color colorToFill = Color.White;
+                    Color color = Color.White;
                     bool isEnabled = true;
 
                     switch (map[i, j])
                     {
                         case CellState.empty:
-                            colorToFill = Color.DarkCyan;
+                        case CellState.adjacent:
+                            color = Color.DarkGreen;
                             break;
                         case CellState.busy:
-                            colorToFill = Color.Blue;
+                            color = Color.Black;
                             break;
                         case CellState.striked:
-                            colorToFill = Color.Yellow;
                             isEnabled = false;
+                            color = Color.Red;
                             break;
                         case CellState.missed:
-                            colorToFill = Color.Gray;
                             isEnabled = false;
+                            color = Color.DarkGoldenrod;
                             break;
-                        case CellState.killed:
-                            colorToFill = Color.Red;
+                        case CellState.destroyed:
                             isEnabled = false;
-                            break;
-                        default:
+                            color = Color.DarkRed;
                             break;
                     }
 
-                    this.Controls[10 * i + j].BackColor = colorToFill;
-                    this.Controls[10 * i + j].Enabled = isEnabled;
+                    Controls[10 * i + j].BackColor = color;
+                    Controls[10 * i + j].Enabled = isEnabled;
                 }
             }
-
-
         }
 
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            if (btn.Name == "switcher")
+            {
+                brain.Switch(btn.Name);
+
+                if (Controls[100].Text == "LeftToRight")
+                    Controls[100].Text = "UpToDown";
+
+                else
+                    Controls[100].Text = "LeftToRight";
+            }
+
+            else if (brain.state == State.construction)
+            {
+                brain.Process(btn.Name);
+
+                if (brain.alives == 10 && playerType == PlayerType.human)
+                    Controls[100].Visible = false;
+            }
+
+            else if (brain.state == State.game)
+            {
+                if (!brain.Play(btn.Name))
+                {
+                    Thread.Sleep(500);
+                    turn.Invoke();
+                }
+            }
+        }
+
+        private void RedrawBtns(List<Point> P, bool isGood, bool isBack)
+        {
+            Color color;
+
+            //if (isGood) color = Color.Green;
+            //else color = Color.White;
+
+            for (int i = 0; i < P.Count; ++i)
+            {
+                if (isBack)
+                {
+                    switch (brain.map[P[i].X, P[i].Y])
+                    {
+                        case CellState.empty:
+                        case CellState.adjacent:
+                            color = Color.DarkGreen;
+                            break;
+                        case CellState.busy:
+                            color = Color.Black;
+                            break;
+                    }
+                }
+                //Controls[P[i].X * 10 + P[i].Y].BackColor = color;
+            }
+        }
+
+        private void Switch_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            brain.Switch(btn.Name);
+        }
+
+        public void Victory(string msg)
+        {
+            MessageBox.Show(msg + " win!");
+        }
     }
 }

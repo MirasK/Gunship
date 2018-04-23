@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.Main.resources
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.Properties.Resources.resources
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TelBook\TelBook\bin\Debug\TelBook.exe.config
+C:\Users\user\source\repos\TelBook\TelBook\bin\Debug\TelBook.exe
+C:\Users\user\source\repos\TelBook\TelBook\bin\Debug\TelBook.pdb
+C:\Users\user\source\repos\TelBook\TelBook\bin\Debug\MySql.Data.dll
+C:\Users\user\source\repos\TelBook\TelBook\bin\Debug\MySql.Data.xml
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.exe
+C:\Users\user\source\repos\TelBook\TelBook\obj\Debug\TelBook.pdb

@@ -5,55 +5,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Battleship
+namespace BattleShip
 {
-    public enum ShipType
+    enum ShipType
     {
-        D1,
-        D2,
-        D3,
-        D4
+        d1,
+        d2,
+        d3,
+        d4
     }
+
     class Ship
     {
-        public List<ShipPoint> body = new List<ShipPoint>();
-        ShipType type;
+        public List<Point> body;
 
-        public Ship(Point p, ShipType type)
+        public Ship(ShipType shipType, Point p, Point dir)
         {
-            this.type = type;
-            GenerateBody(p);
-        }
+            body = new List<Point>();
+            int a = 0;
 
-        public void GenerateBody(Point p)
-        {
-            switch (type)
+            switch (shipType)
             {
-                case ShipType.D1:
-                    body.Add(new ShipPoint { X = p.X, Y = p.Y, PType = PartType.ShipPart });
+                case ShipType.d1:
+                    a = 1;
                     break;
-                case ShipType.D2:
-                    for (int i = 0; i < 2; ++i)
-                    {
-                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
-                    }
+                case ShipType.d2:
+                    a = 2;
                     break;
-                case ShipType.D3:
-                    for (int i = 0; i < 3; ++i)
-                    {
-                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
-                    }
+                case ShipType.d3:
+                    a = 3;
                     break;
-                case ShipType.D4:
-                    for (int i = 0; i < 4; ++i)
-                    {
-                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
-                    }
-                    break;
-                default:
+                case ShipType.d4:
+                    a = 4;
                     break;
             }
 
+            for (int i = 0; i < a; ++i)
+            {
+                body.Add(new Point(p.X + i * dir.X, p.Y + i * dir.Y));
+            }
         }
     }
 }

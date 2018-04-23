@@ -1,10 +1,10 @@
-C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
-C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.Form1.resources
-C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.Properties.Resources.resources
-C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csproj.GenerateResource.Cache
-C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Battleship\Battleship\bin\Debug\Battleship.exe.config
 C:\Users\user\source\repos\Battleship\Battleship\bin\Debug\Battleship.exe
 C:\Users\user\source\repos\Battleship\Battleship\bin\Debug\Battleship.pdb
+C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\BattleShip.main.resources
+C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.Properties.Resources.resources
+C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.exe
 C:\Users\user\source\repos\Battleship\Battleship\obj\Debug\Battleship.pdb
