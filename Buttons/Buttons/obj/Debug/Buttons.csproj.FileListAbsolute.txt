@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.Form1.resources
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.Properties.Resources.resources
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Buttons\Buttons\bin\Debug\Buttons.exe.config
+C:\Users\user\source\repos\Buttons\Buttons\bin\Debug\Buttons.exe
+C:\Users\user\source\repos\Buttons\Buttons\bin\Debug\Buttons.pdb
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.exe
+C:\Users\user\source\repos\Buttons\Buttons\obj\Debug\Buttons.pdb

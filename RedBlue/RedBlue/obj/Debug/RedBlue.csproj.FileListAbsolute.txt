@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\RedBlue\RedBlue\bin\Debug\RedBlue.exe.config
+C:\Users\user\source\repos\RedBlue\RedBlue\bin\Debug\RedBlue.exe
+C:\Users\user\source\repos\RedBlue\RedBlue\bin\Debug\RedBlue.pdb
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.Form1.resources
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.Properties.Resources.resources
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.exe
+C:\Users\user\source\repos\RedBlue\RedBlue\obj\Debug\RedBlue.pdb

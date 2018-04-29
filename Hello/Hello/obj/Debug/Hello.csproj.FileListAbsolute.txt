@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\Hello\Hello\bin\Debug\Hello.exe.config
+C:\Users\user\source\repos\Hello\Hello\bin\Debug\Hello.exe
+C:\Users\user\source\repos\Hello\Hello\bin\Debug\Hello.pdb
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.Form1.resources
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.Properties.Resources.resources
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.exe
+C:\Users\user\source\repos\Hello\Hello\obj\Debug\Hello.pdb
